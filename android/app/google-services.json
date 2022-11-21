@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1074951801627",
+    "project_id": "chat-91251",
+    "storage_bucket": "chat-91251.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074951801627:android:3d0d6068f49a14fc1561be",
+        "android_client_info": {
+          "package_name": "com.chatme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074951801627-alul6hbe0fin152tth8cc804mkis22tr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdK5gMtnAjxlsb3LJIv4qVssJ2xoJdtBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074951801627-alul6hbe0fin152tth8cc804mkis22tr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
