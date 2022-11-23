@@ -8,7 +8,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import AuthStack from "./AuthStack";
 import HomeStack from "./HomeStack";
-import SplashStack from "./SplashStack";
+
 const RootStack = () => {
   const dispatch = useDispatch();
   const { isLogin } = useSelector((state) => state.authReducer);
@@ -36,8 +36,7 @@ const RootStack = () => {
       {isLogin ? (
         <HomeStack />
       ) : (
-        <>
-          <SplashStack />
+        <>        
           <AuthStack />
         </>
       )}

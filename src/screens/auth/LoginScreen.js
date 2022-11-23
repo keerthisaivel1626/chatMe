@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect,useLayoutEffect } from "react";
 import { View, StyleSheet } from "react-native";
 import LottieView from "lottie-react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -11,7 +11,12 @@ import FormView from "../../components/auth/FormView";
 
 const LoginScreen = ({ navigation }) => {
   const dispatch = useDispatch();
-
+  useLayoutEffect(() => {
+    async function splashStore() {
+      await AsyncStorage.setItem("alreadyLaunched", "true");
+    }
+    splashStore();
+  }, []);
   return (
     <View style={styles.LoginRootContainer}>
       <View style={styles.topAnimation}>
@@ -19,7 +24,6 @@ const LoginScreen = ({ navigation }) => {
           style={styles.lottiStyle}
           source={require("../../assets/animations/login.json")}
           autoPlay
-          
           speed={1}
           loop={false}
         />
@@ -42,7 +46,6 @@ const LoginScreen = ({ navigation }) => {
                 handleSubmit={handleSubmit}
                 handleChange={handleChange}
                 values={values}
-               
               />
             );
           }}
